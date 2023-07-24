@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #0083e9;
+}
+.accordion {
+  width: min(90vw, 500px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+input[type="checkbox"] {
+  display: none;
+  appearance: none;
+}
+.accordion-item {
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+}
+.accordion-item:not(:last-child) {
+  margin-bottom: 1em;
+}
+.accordion-content {
+  color: #606060;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+label {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1em 0;
+}
+input[type="checkbox"] ~ label .arrow {
+  display: inline-block;
+  transition: 1s;
+}
+
+input[type="checkbox"]:checked ~ label .arrow {
+  transform: rotate(90deg);
+}
+input[type="checkbox"]:checked ~ label {
+  color: #0083e9;
+}
+input[type="checkbox"] ~ .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 100vh;
+
+  transition: 1s;
+}

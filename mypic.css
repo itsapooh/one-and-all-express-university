@@ -1,0 +1,82 @@
+body{
+    background-color: #fabe58;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    height: 450px;
+    width: 310px;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 25px 10px rgba(223, 144, 7,0.6);
+}
+.info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.name{
+    font-size: 35px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #f79f08;
+    position: absolute;
+    top:100px;
+}
+.prof{
+    color: #555555;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top:140px;
+}
+.divider{
+    height: 1.5px;
+    width: 50px;
+    background-color: #949594;
+    position: absolute;
+    top:190px;
+}
+.bio{
+    color: #949594;
+    font-family: 'Work Sans', sans-serif;
+    font-size:18px;
+    line-height: 28px;
+    text-align: center;
+    position: absolute;
+    top:220px;
+}
+button{
+    background-color: #f79f08;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    font-size: 20px;
+    padding: 13px 25px;
+    position: absolute;
+    bottom: 30px;
+}
+.photo{
+    height: 100%;
+    width: 100%;
+    background: url(profile1.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+    transition: 1s;
+}
+.card:hover .photo{
+    transform: scale(0.5,0.35) translateY(-650px);
+    background-size: 100% 150%;
+    background-position: 0 -25px;
+    border-radius: 50%;
+}
